@@ -10,6 +10,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "element-plus": "^2.3.4",
+    "less-loader": "^11.1.0",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6",
     "vuex": "^4.1.0"
@@ -21,6 +24,9 @@
     "eslint": "^8.39.0",
     "eslint-plugin-vue": "^9.11.0",
     "prettier": "^2.8.8",
+    "unplugin-auto-import": "^0.15.3",
+    "unplugin-element-plus": "^0.7.1",
+    "unplugin-vue-components": "^0.24.1",
     "vite": "^4.3.4"
   }
 }
