@@ -1,9 +1,11 @@
 <script>
+import Marquee from "@/components/Marquee/index.vue";
 export default {
-    name: 'Home'
+    name: 'Home',
+  components:{Marquee}
 }
 </script>
 <template>
-    <div>测试</div>
+    <Marquee/>
 </template>
 <style></style>
