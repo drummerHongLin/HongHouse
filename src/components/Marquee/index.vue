@@ -1,19 +1,17 @@
 <template>
-  <div>
-    <div class="scroll-temp">
-      <div class="temp-box" ref="temp">
-        <div v-for="(v,i) in list1" :key="v + '1'" class="li">
-          {{ i+1}}. {{v}}
+    <div class="marquee-container">
+      <div class="marquee-box" ref="temp">
+        <div v-for="(v,i) in list1" :key="v + '1'" class="marquee-li">
+          <span class="marquee-item-title">{{ i+1}}.</span> <span class="marquee-item-content">{{v}}</span>
         </div>
-        <div v-for="(v,i) in list2" :key="v + '2'" class="li">
-          {{ i+1}}. {{v}}
+        <div v-for="(v,i) in list2" :key="v + '2'" class="marquee-li">
+          <span class="marquee-item-title">{{ i+1}}.</span> <span class="marquee-item-content">{{v}}</span>
         </div>
-        <div v-for="(v,i) in list3" :key="v + '2'" class="li">
-          {{ i+1}}. {{v}}
+        <div v-for="(v,i) in list3" :key="v + '2'" class="marquee-li">
+          <span class="marquee-item-title">{{ i+1}}.</span> <span class="marquee-item-content">{{v}}</span>
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -62,19 +60,21 @@ export default {
 };
 </script>
 <style scoped lang="less" >
-.scroll-temp {
-  background:pink;
-  color: #000;
+.marquee-container {
+  position: fixed;
+  top: 50px;
+  z-index: 1000;
+  background-color: white;
+  color: #606266;
   font-size: 20px;
-  top: 100px;
-  left: 480px;
-  width: 960px;
-  height: 30px;
-  line-height: 30px;
+  width: 80vw;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #909399;
   overflow: hidden;
-  .temp-box {
+  .marquee-box {
     white-space: nowrap;
-    .li {
+    .marquee-li {
       display: inline;
       height: 30px;
       padding-right: 20px;
