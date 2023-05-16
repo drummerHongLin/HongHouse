@@ -1,4 +1,5 @@
 <template>
+  <el-affix :offset="55">
     <div class="marquee-container">
       <div class="marquee-box" ref="temp">
         <div v-for="(v,i) in list1" :key="v + '1'" class="marquee-li">
@@ -12,6 +13,7 @@
         </div>
       </div>
     </div>
+  </el-affix>
 </template>
 
 <script>
@@ -28,7 +30,7 @@ export default {
         '成都春熙路', '成都龙泉山', '成都天府广场', '成都博物馆',
       ],
       list3:[
-        '广州春熙路', '广州龙泉山', '广州天府广场', '广州博物馆',
+        '广州北京路', '广州白云山山', '广州花城广场', '广州博物馆',
       ]
     };
   },
@@ -61,9 +63,6 @@ export default {
 </script>
 <style scoped lang="less" >
 .marquee-container {
-  position: fixed;
-  top: 50px;
-  z-index: 1000;
   background-color: white;
   color: #606266;
   font-size: 20px;

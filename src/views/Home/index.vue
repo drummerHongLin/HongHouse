@@ -12,11 +12,12 @@ export default {
 
     <div class="main-content">  
       <ImgCarousel/>
-      <SummaryNav/></div>
+      <SummaryNav/>
+    </div>
 </template>
 <style>
 .main-content{
-  padding-top: 90px;
+
   width: 80vw;
   display: flex;
   flex-direction: column;

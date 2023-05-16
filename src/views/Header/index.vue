@@ -18,6 +18,7 @@ methods:{
 }
 </script>
 <template>
+     <el-affix>
     <header>
         <div class="header-left">
             <el-text>
@@ -34,12 +35,12 @@ methods:{
         </div>
         <el-link>关于我们</el-link>
     </header>
+</el-affix>
 </template>
 <style scoped lang="less">
     header{
-        position: fixed;
         width: 80vw;
-        z-index: 1000;
+        height: 55px;
         background-color: white;
         display: inline-flex;
         justify-content: space-between;
