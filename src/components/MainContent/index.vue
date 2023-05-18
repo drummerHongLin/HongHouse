@@ -18,5 +18,6 @@ export default {
   height: 600px;
   display: flex;
   flex-direction: column;
+  padding-right: 5px;
 }
 </style>
